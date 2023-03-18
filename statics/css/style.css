@@ -40,6 +40,14 @@
         margin-bottom: 10px;
     }
     
+    .ml-10 {
+        margin-left: 10px;
+    }
+    
+    .ml-30 {
+        margin-left: 40px;
+    }
+    
     .w-300h-500 {
         width: 300px;
         height: 500px;
@@ -66,6 +74,11 @@
         height: 100px;
         margin: auto;
         overflow: hidden;
+    }
+    
+    .btn-image_where {
+        margin-top: 3px;
+        margin-right: 5px;
     }
     
     .list {
@@ -116,22 +129,19 @@
         height: 100%;
         box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 30px;
         display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        align-content: stretch;
     }
     
     #page-text {
         width: 30%;
         height: 100%;
         background-color: rgb(68, 120, 103);
-    }
-    
-    .page-text-right {
-        position: relative;
-        right: 70%;
-    }
-    
-    .page-image-right {
-        position: relative;
-        left: 30%;
+        order: 0;
+        align-self: auto;
     }
     
     #page-image {
@@ -141,6 +151,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        order: 0;
+        align-self: auto;
     }
     
     #page-text>#text-area {
@@ -150,4 +162,9 @@
         resize: none;
         width: 100%;
         height: 100%;
+    }
+    
+    .btn-style-choose {
+        border: none;
+        padding: 0px !important;
     }
