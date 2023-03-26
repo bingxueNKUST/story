@@ -1,3 +1,6 @@
+
+
+
 {%extends 'base.html'%} {%block content%}
 <div class="container mt-10 mb-10 ">
   <div class="row">
@@ -10,30 +13,26 @@
         scrollbar-gutter: stable;
       "
     >
+    
     <form action="{% url 'MakerSpace' %}" method="post">
       <input type="hidden" id="book_Id" name="book_Id" value="{{book_id}}" />
       <input type="hidden" id="style_Id" name="style_Id" value="" />
         
       <div class="row row-cols-1 row-cols-md-4 g-4">
+        
         {% for style in stylebase %}
         <div class="col">
         <button class="btn btn-style-choose" type="submit">
           <a  id="card-a" href="#style?ID={{style.styleID}}" onclick="getStyle('{{style.styleID}}')" >
-            <div id="card-style" class="card h-100">
+            <div id="card-style" class="card">
               <img
-                src="https://fakeimg.pl/300x200/?text=300X200&font=lobster"
+                src="{{style.style_preview.url}}"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5
-                  id="{{style.styleID}}"
-                  
-                  class="card-title"
-                >
-                  {{style.name}}
-                </h5>
-              </div>
+              
+              <p id="{{style.styleID}}" class="text-center mb-0">{{style.name}}</p>
+              
             </div>
           </a>
         </button>
