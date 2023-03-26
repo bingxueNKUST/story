@@ -1,170 +1,176 @@
-    body {
-        background-color: #d9d9f3;
-    }
-    
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
-    * {
-        font-family: 'Noto Sans TC';
-        font-weight: 900;
-    }
-    
-    .white-block {
-        background-color: #FFFFFF;
-        padding: 20px;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-    }
-    
-    .gray-block {
-        background-color: #f4f0e6;
-        padding: 20px;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-    }
-    
-    .mt-10 {
-        margin-top: 10px;
-    }
-    
-    .mt-30 {
-        margin-top: 30px;
-    }
-    
-    .mb-10 {
-        margin-bottom: 10px;
-    }
-    
-    .ml-10 {
-        margin-left: 10px;
-    }
-    
-    .ml-30 {
-        margin-left: 40px;
-    }
-    
-    .w-300h-500 {
-        width: 300px;
-        height: 500px;
-    }
-    
-    .right {
-        float: right;
-    }
-    
-    .btn-box {
-        overflow: hidden;
-    }
-    
-    .btn-box>button {
-        margin: 1%;
-        border-radius: 20px;
-        width: 100px;
-        padding: 6px 12px;
-    }
-    
-    .box {
-        padding: 0;
-        width: 999px;
-        height: 100px;
-        margin: auto;
-        overflow: hidden;
-    }
-    
-    .btn-image_where {
-        margin-top: 3px;
-        margin-right: 5px;
-    }
-    
-    .list {
-        margin: 0;
-    }
-    
-    .of-y {
-        overflow-y: hidden;
-    }
-    
-    .ul-of {
-        white-space: nowrap;
-        overflow: visible;
-        width: 100px;
-    }
-    
-    .fz-24 {
-        font-size: 24px;
-    }
-    
-    .photo,
-    .photo>img {
-        background-color: rgb(238, 235, 235);
-        width: 150px;
-        height: 100px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        font-size: 3.5rem;
-        display: inline-block;
-    }
-    
-    .fa-love {
-        font-size: 1.25em;
-        line-height: 0em;
-        vertical-align: -0.075em;
-        color: #ff8a80;
-        float: right;
-    }
-    
-    .pic-place {
-        background-position: right bottom;
-    }
-    /* 圖像區 */
-    
-    #page-cover {
-        background-color: white;
-        width: 100%;
-        height: 100%;
-        box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: nowrap;
-        align-content: stretch;
-    }
-    
-    #page-text {
-        width: 30%;
-        height: 100%;
-        background-color: rgb(68, 120, 103);
-        order: 0;
-        align-self: auto;
-    }
-    
-    #page-image {
-        width: 70%;
-        height: 100%;
-        object-fit: contain;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        order: 0;
-        align-self: auto;
-    }
-    
-    #page-text>#text-area {
-        padding: 15%;
-        box-sizing: border-box;
-        border: none;
-        resize: none;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .btn-style-choose {
-        border: none;
-        padding: 0px !important;
-    }
+body {
+    background-color: #d9d9f3;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+* {
+    font-family: 'Noto Sans TC';
+    font-weight: 900;
+}
+
+.white-block {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.gray-block {
+    background-color: #f4f0e6;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-30 {
+    margin-left: 40px;
+}
+
+.w-300h-500 {
+    width: 300px;
+    height: 500px;
+}
+
+.right {
+    float: right;
+}
+
+.btn-box {
+    overflow: hidden;
+}
+
+.btn-box>button {
+    margin: 1%;
+    border-radius: 20px;
+    width: 100px;
+    padding: 6px 12px;
+}
+
+.box {
+    padding: 0;
+    width: 999px;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.btn-image_where {
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.list {
+    margin: 0;
+}
+
+.of-y {
+    overflow-y: hidden;
+}
+
+.ul-of {
+    white-space: nowrap;
+    overflow: visible;
+    width: 100px;
+}
+
+.fz-24 {
+    font-size: 24px;
+}
+
+.photo,
+.photo>img {
+    background-color: rgb(238, 235, 235);
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 3.5rem;
+    display: inline-block;
+}
+
+.fa-love {
+    font-size: 1.25em;
+    line-height: 0em;
+    vertical-align: -0.075em;
+    color: #ff8a80;
+    float: right;
+}
+
+.pic-place {
+    background-position: right bottom;
+}
+
+
+/* 圖像區 */
+
+#page-cover {
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 30px; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#page-text {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    order: 0;
+    align-self: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-text>#text-area {
+    box-sizing: border-box;
+    border: 2px dashed rgb(92, 89, 89);
+    resize: none;
+    width: 80%;
+    height: 80%;
+}
+
+#page-image {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 0;
+    align-self: auto;
+}
+
+.btn-style-choose {
+    border: none;
+    padding: 0px !important;
+}
